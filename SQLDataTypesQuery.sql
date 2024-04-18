@@ -33,4 +33,6 @@ NVARCHAR(n)
 
 BINARY(n)
 VARBINARY(n)
+
+XML
 */

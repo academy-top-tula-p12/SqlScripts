@@ -1,3 +1,6 @@
+
+
+
 --CREATE TABLE product_type
 --(
 --	id INT PRIMARY KEY IDENTITY(1,1),
@@ -16,12 +19,12 @@
 
 --GO
 
-CREATE TABLE product
-(
-	id INT IDENTITY PRIMARY KEY,
-	title VARCHAR(100) NOT NULL,
-	price DECIMAL(8,2),
-	isempty BIT DEFAULT 1
-)
+--CREATE TABLE product
+--(
+--	id INT IDENTITY PRIMARY KEY,
+--	title VARCHAR(100) NOT NULL,
+--	price DECIMAL(8,2),
+--	isempty BIT DEFAULT 1
+--)
 
-GO
+--GO
