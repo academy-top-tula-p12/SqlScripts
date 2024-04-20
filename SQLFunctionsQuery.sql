@@ -1,0 +1,104 @@
+-- STRING FUNCTIONS
+
+--DECLARE @str VARCHAR(50) = 'Hello world, hello people'
+--DECLARE @str2 VARCHAR(50) = '    Hello world     '
+
+--SELECT LEN(@str)
+--SELECT LTRIM(@str2)
+--SELECT RTRIM(@str2) + '!'
+--SELECT TRIM(@str2)
+
+--SELECT CHARINDEX('wo', @str)
+--SELECT PATINDEX('%_o%', @str)
+
+--SELECT LEFT(@str, 3)
+--SELECT RIGHT(@str, 3)
+--SELECT SUBSTRING(@str, 3, 5)
+--SELECT REPLACE(@str, 'Hello', 'Good by')
+--SELECT REVERSE(@str)
+--SELECT CONCAT(@str, ' ', TRIM(@str2))
+
+--SELECT LOWER(@str)
+--SELECT UPPER(@str)
+--SELECT SPACE(10)
+
+--SELECT CONCAT(last_name, ' ', first_name)
+--	FROM author
+
+
+
+-- NUMBERS FUNCTIONS
+DECLARE @str_num VARCHAR(50) = '123456'
+DECLARE @str_str VARCHAR(50) = '123456ASD'
+DECLARE @int INT = 123456
+DECLARE @int_neg INT = -123456
+DECLARE @real REAL = 12345.6789
+
+--SELECT ROUND(@real, 0)
+--SELECT ISNUMERIC(@str_num)
+--SELECT ISNUMERIC(@str_str)
+--SELECT ISNUMERIC(@int)
+--SELECT ISNUMERIC(@real)
+
+--SELECT ABS(@int_neg)
+--SELECT CEILING(2.2)
+--SELECT CEILING(2.9)
+--SELECT CEILING(-2.2)
+--SELECT CEILING(-2.9)
+
+--SELECT FLOOR(2.2)
+--SELECT FLOOR(2.9)
+--SELECT FLOOR(-2.2)
+--SELECT FLOOR(-2.9)
+
+--SELECT SQUARE(5)
+--SELECT SQRT(121)
+
+--SELECT RAND()
+-- COS(X), SIN(X), TAN(X)
+
+
+
+
+-- DATE FUNCTIONS
+
+--SELECT GETDATE() --datetime
+--SELECT GETUTCDATE()
+--SELECT SYSDATETIME() --datetime2
+--SELECT SYSUTCDATETIME() --datetime2
+
+DECLARE @date_curr DATETIME = GETDATE()
+
+--SELECT DAY(@date_curr)
+--SELECT MONTH(@date_curr)
+--SELECT YEAR(@date_curr)
+--SELECT DATENAME(WEEKDAY, @date_curr)
+--SELECT DATEPART(WEEKDAY, @date_curr)
+/*
+year, month, day
+quarter
+dayofyear
+week
+weekday
+hour, minute, second, millisecond, microsecond, nanosecond
+*/
+
+--SELECT DATEADD(YEAR, 10, @date_curr)
+--SELECT DATEDIFF(MONTH, @date_curr, '2027-7-15')
+--SELECT TODATETIMEOFFSET(@date_curr, '+03:00')
+
+--SELECT DATEFROMPARTS(2021, 8, 10)
+--SELECT ISDATE(@date_curr)
+
+SELECT STR(1234)
+SELECT CAST(1234 AS VARCHAR(50))
+SELECT CONVERT(VARCHAR(50), 1234)
+
+SELECT CONVERT(INT, GETDATE(), 104)
+--SELECT TRY_CONVERT(type, value)
+
+SELECT STR(1234)
+SELECT CHAR(123)
+SELECT ASCII('A')
+SELECT NCHAR(1067)
+SELECT UNICODE('A')
